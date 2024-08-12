@@ -17,6 +17,9 @@ zombEl.setAttribute('id', id);
 zombEl.setAttribute('position',position);
 zombEl.setAttribute('scale','10 10 10');
 zombEl.setAttribute('gltf-model','#zmb' );
+zombEl.setAttribute('animation-mixer',{clip:'Walk'} );
+zombEl.setAttribute('animation',{property:'position',loop:'true',to:'-10 0 1000',dur:'15000',easing:'linear'} );
+environEl.appendChild(zombEl);
 }
 })
 
